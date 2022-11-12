@@ -1,0 +1,87 @@
+def Accept_array(A):
+
+n = int(input('Enter total no of students'))
+
+for i in range(n):
+
+x= int(input('Enter roll no'))
+
+A.append(x)
+
+def Display_array (A):
+
+print('Students roll no are)
+
+n = len(A)
+
+for i in range(n):
+
+print (A[i])
+
+def Binary_search (A):
+
+search_roll no = int(input('Enter roll no to be search'))
+
+Low = 0
+
+n = len(A)
+
+high = n-1
+
+while (low <= high):
+
+mid = int((low+high)/2)
+
+if (search_roll == A[mid]):
+
+print('roll no is found at', mid) return
+
+elif (search_roll no >A [mid]):
+
+Low= mid+1
+
+elif (search_roll no<A [mid]):
+
+high-mid-1
+
+def
+
+print('roll no not found')
+
+def main():
+
+print('hii')
+
+A = []
+
+while True:
+
+print('1.Accept array') print('2.Display Roll no array')
+
+print('3.Binary search) print('4. fibonacci search)
+
+print('5.exit')
+
+choice = int(input('Enter your choice'))
+
+if (choice == 1):
+
+Accept_array(A)
+
+elif (choice == 2):
+
+Display_array (A)
+
+elif (choice == 3):
+
+Binary_search (A)
+
+elif (choice == 4):
+
+fibonacci_search (A)
+
+elif (choice == 5):
+
+break
+
+main()
